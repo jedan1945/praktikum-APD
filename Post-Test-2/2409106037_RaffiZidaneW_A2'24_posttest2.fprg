@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="yyyy"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 12.48.57 AM"/>
+        <attribute name="created" value="VXNlcjtNU0k7MjAyNC0wOS0xNjswOC4zOS41NiBQTTsxOTIz"/>
+        <attribute name="edited" value="VXNlcjtNU0k7MjAyNC0wOS0xNzsxMi40MS4xNSBBTTszO0xFTk9WTyBMT1E7TEFQVE9QLTBVUEczQVZTOzIwMjQtMDktMTM7MTE6MDI6MzggUE07MjQwOTEwNjAzMF9NdWhhbW1hZEZhamFyRGFmaXRhX0EyJzI0X3Bvc3R0ZXN0MlsxXS5mcHJnOzk4MDA="/>
+        <attribute name="edited" value="VXNlcjtNU0k7MjAyNC0wOS0xNzsxMi40OC41NyBBTTsyOzIwMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nim, harga" type="Integer" array="False" size=""/>
+            <declare name="diskonMawar, hargamawar, diskonSania, hargaSania, diskonMaknyus, hargaMaknyus" type="Real" array="False" size=""/>
+            <declare name="nama" type="String" array="False" size=""/>
+            <output expression="&quot;mau beli beras?isi ini dulu boss&quot;" newline="True"/>
+            <output expression="&quot;masukan nama untuk membeli beras&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;sekalian nim dong ganteng&quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;harga berapa?&quot;" newline="True"/>
+            <input variable="harga"/>
+            <output expression="&quot;untuk mawar diskon 11%,sania diskon 13%, maknyus diskon 17%&quot;" newline="True"/>
+            <assign variable="diskonMawar" expression="(harga)*(0.11)"/>
+            <assign variable="hargamawar" expression="harga-diskonMawar"/>
+            <assign variable="diskonSania" expression="(harga)*(0.13)"/>
+            <assign variable="hargaSania" expression="harga-diskonSania"/>
+            <assign variable="diskonMaknyus" expression="(harga)*(0.17)"/>
+            <assign variable="hargaMaknyus" expression="harga-diskonMaknyus"/>
+            <output expression="nama&amp;&quot; dengan Nim &quot; &amp; nim &amp; &quot; ingin membeli beras seharga &quot; &amp; harga" newline="True"/>
+            <output expression="&quot;Jika dia membeli beras Mawar ia harus membayar &quot; &amp; hargamawar" newline="True"/>
+            <output expression="&quot;Jika dia membeli beras Sania ia harus membayar &quot; &amp; hargaSania" newline="True"/>
+            <output expression="&quot;Jika dia membeli beras Maknyus ia harus membayar &quot; &amp; hargaMaknyus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
